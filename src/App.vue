@@ -1,31 +1,42 @@
-<script setup>
+<!-- <script setup>
 // This starter template is using Vue 3 <script setup> SFCs
 // Check out https://vuejs.org/api/sfc-script-setup.html#script-setup
-import HelloWorld from './components/HelloWorld.vue'
 </script>
 
 <template>
-  <div>
-    <a href="https://vitejs.dev" target="_blank">
-      <img src="/vite.svg" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://vuejs.org/" target="_blank">
-      <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
-    </a>
-  </div>
-  <HelloWorld msg="Vite + Vue" />
+  <router-view></router-view>
 </template>
 
 <style scoped>
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
+
+</style> -->
+<template>
+  <router-view/>
+</template>
+
+<script>
+
+export default{
+  name:'App'
 }
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+</script>
+<style>
+body, html{
+  background-image: linear-gradient(to bottom, #1B3E80, #12203A 50% );
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: rgb(130, 183, 252);
+  background-clip: fixed;
 }
-.logo.vue:hover {
-  filter: drop-shadow(0 0 2em #42b883aa);
+.router-link-exact-active{
+  border-bottom: 4px solid rgb(228, 11, 119) !important;
+}
+
+.text-shadow{
+  text-shadow: 1px 1px #12203A;
+}
+
+.text-shadow-2{
+  text-shadow: 2px 2px #12203A;
 }
 </style>
