@@ -32,6 +32,12 @@ body, html{
   border-bottom: 4px solid rgb(228, 11, 119) !important;
 }
 
+.nob .router-link-exact-active{
+  border-bottom: none !important;
+  color: rgb(228, 11, 119);
+}
+
+
 .text-shadow{
   text-shadow: 1px 1px #12203A;
 }

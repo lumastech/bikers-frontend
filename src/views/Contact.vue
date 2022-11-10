@@ -1,7 +1,7 @@
 <template>
+    <!-- top NAv bar componate -->
+      <Nav></Nav>
     <div class="xl:container px-2 md:px-4 mx-auto mb-9">
-      <!-- top NAv bar componate -->
-        <Nav></Nav>
       <div class="max-w-12xl flex gap-7 mx-auto mt-7">
         <!-- left side bar -->
         <left-side-bar></left-side-bar>

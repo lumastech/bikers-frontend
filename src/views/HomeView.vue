@@ -1,11 +1,12 @@
 <template>
-  <div class="xl:container px-2 md:px-4 mx-auto">
-    <!-- top NAv bar componate -->
-      <Nav> </Nav>
+  <!-- top NAv bar componate -->
+  <Nav></Nav>
+
+  <div class="xl:container px-2 md:px-4 mx-auto transition-all">
     <div class="max-w-12xl flex gap-4 mx-auto mt-7">
       <!-- left side bar -->
       <left-side-bar></left-side-bar>
-       <!--//lsb-->
+      <!--//lsb-->
       
       <!-- main content  -->
       <div class="main-content">
@@ -54,7 +55,7 @@ export default {
       typingState: true,
       TypingPos: 0,
       textvalue:'',
-      text1:"Hi, I am Lumas. \nI am a full stuck web developer. \nContact me on : 260 971 864 421"
+      text1:"Hi, I am Lumas. \nI am a full stuck web developer.\nContact me on : 260 971 864 421"
     }),
     methods:{
       // logo typing

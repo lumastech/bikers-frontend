@@ -1,12 +1,12 @@
 <template>
-  <div class="w-48 xl:w-72 flex-none hidden md:inline">
+  <div class="w-48 xl:w-72 flex-none hidden md:inline transition-all">
     <!-- rouded image -->
     <div class="rounded-md md:p-1 bg-gradient-to-br from-pink-500 to-indigo-500 rounded-xl p-1 hover:from-indigo-700 hover:to-pink-500 hover:shadow-xl transition">
-        <img src="../assets/sgg21.jpg" alt="lumas" class="aspect-square rounded-lg h-full w-full">
+        <img src="../assets/sgg21.jpg" alt="lumas" class="aspect-video rounded-lg h-full w-full">
     </div>
 
     <div class="flex gap-2 mt-4">
-        <div class="flex-none w-28 rounded-md overflow-hidden shadow border border-indigo-700">
+        <div class="flex-none w-12 md:w-16 xl:w-24 transition-all rounded-md overflow-hidden shadow border border-indigo-700">
             <img src="../assets/lumas3.png" alt="lumas" class="aspect-square rounded-md h-full w-full">
         </div>
         <div class="shrink flex-auto rounded-xl overflow-hidden shadow p-2 border border-indigo-700 bg-[#12203A]">

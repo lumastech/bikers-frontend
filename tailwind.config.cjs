@@ -6,7 +6,18 @@ module.exports = {
     "./src/**/*.{vue,js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      backdropBlur: {
+
+        xs: '4px',
+        md:'12px',
+        lg:'16px',
+        xl:'24px',
+        '2xl':'40',
+        '3xl':'60'
+
+      }
+    },
   },
   plugins: [],
 }

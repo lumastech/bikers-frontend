@@ -1,6 +1,6 @@
 <template>
 
-    <div class="rounded-md bg-blue-900 shadow-sm mb-7  relative mb-24 border-b-4 border-blue-800 mx-2 hover:shadow-xl hover:border-pink-400 transition">
+    <div class="rounded-md bg-blue-900 shadow-sm relative mb-24 mx-2 hover:shadow-xl transition">
       
       <div class="overflow-hidden md:h-96 rounded-md">
         <img src="../assets/lumasbg.png" alt="Lumas" class="w-full h-full rounded-md">
@@ -10,7 +10,7 @@
       </div>
 
       <!-- rounded full  -->
-      <div class="rounded-full p-2 w-52 h-52 absolute -bottom-24 left-12 bg-gradient-to-br from-pink-500 to-indigo-500 rounded-xl p-2 hover:from-indigo-700 hover:to-pink-500 hover:shadow-xl transition ">
+      <div class="rounded-full p-1 w-52 h-52 absolute -bottom-24 left-12 bg-gradient-to-br from-pink-500 to-indigo-500 rounded-xl p-2 hover:from-indigo-700 hover:to-pink-500 hover:shadow-xl transition ">
         <img src="../assets/lumas1.jpg" alt="lumas" class="aspect-square rounded-full h-full w-full">
       </div>
     </div>
