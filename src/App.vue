@@ -21,28 +21,5 @@ export default{
 }
 </script>
 <style>
-body, html{
-  background-image: linear-gradient(to bottom, #1B3E80, #12203A 50% );
-  background-size: cover;
-  background-repeat: no-repeat;
-  color: rgb(130, 183, 252);
-  background-clip: fixed;
-}
-.router-link-exact-active{
-  border-bottom: 4px solid rgb(228, 11, 119) !important;
-}
 
-.nob .router-link-exact-active{
-  border-bottom: none !important;
-  color: rgb(228, 11, 119);
-}
-
-
-.text-shadow{
-  text-shadow: 1px 1px #12203A;
-}
-
-.text-shadow-2{
-  text-shadow: 2px 2px #12203A;
-}
 </style>
