@@ -3,6 +3,7 @@ import Home from '../views/Home.vue'
 import Login from '../views/Login.vue'
 import Dashboard from '../views/dashboard.vue'
 import Package from '../views/package.vue'
+import Packages from '../views/packages.vue'
 
 const routes = [
   {
@@ -25,6 +26,11 @@ const routes = [
     path: "/package",
     name: "package",
     component: Package,
+  },
+  {
+    path: "/packages",
+    name: "packages",
+    component: Packages,
   },
 ];
 
