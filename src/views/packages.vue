@@ -23,23 +23,34 @@
     </div>
 
      <!-- MAIN -->
-     <div class="grid md:grid-cols-4 gap-4 mt-7">
-        <div class="md:col-span-3 rounded-md shadow p-2 h-80">
-            <h1 class="text-sky-400">PICK UPS</h1>
-            <div class="bg-gradient-to-r from-sky-400 to-teal-400 h-px"></div>
-            
-        </div>
-        
-        <div class="rounded-md shadow p-2 bg-gradient-to-b from-sky-50 to-teal-50">
-            <h1 class="text-sky-400">ACTIVITIES</h1>
-            <div class="bg-gradient-to-r from-sky-500 to-teal-500 h-px"></div>
-        </div>
+     <div class="rounded-md shadow p-2 h-80 my-7">
+         <h1 class="text-sky-400">PACKAGES</h1>
+         <div class="bg-gradient-to-r from-sky-400 to-teal-400 h-px"></div>
+         <table class="table-auto w-full uppercase">
+            <thead>
+                <tr>
+                    <th>tracking No.</th>
+                    <th>sender phone</th>
+                    <th>RECEVER name</th>
+                    <th>RECEVER phone</th>
+                    <th>ticket n0</th>
+                    <th>from</th>
+                    <th>destination</th>
+                    <th>bus</th>
+                    <th>processed by</th>
+                    <th>valus k</th>
+                    <th>charge k</th>
+                    <th>status</th>
+                    <th>date</th>
+                </tr>
+            </thead>
+         </table>
      </div>
   </Dashboard>
 </template>
 
 <script>
-import { reactive } from 'vue';
+import { inject, reactive } from 'vue';
 import Dashboard from '../layouts/dashboard.vue'
 export default {
     layout: Dashboard,
@@ -47,10 +58,29 @@ export default {
         Dashboard
     },
     setup() {
+        const axios = inject('axios')
+        const baseURL = inject('baseURL')
         const packag = reactive({})
-        return {
-            packag,
+        const package_filters = reactive({
+            date: '',
+            bike: '',
+        })
+
+        // fetch packages
+        const getPackages = (filters) => {
+            axios.get(baseURL + 'packages').then((res) => {
+                console.log(res)
+            }).catch((err) => {
+                console.log(err)
+            })
         }
+        return {
+            packag, getPackages
+        }
+    },
+
+    created() {
+        this.getPackages()
     }
 }
 </script>

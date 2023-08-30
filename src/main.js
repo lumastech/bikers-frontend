@@ -11,9 +11,10 @@ import Loading from './views/Shared/loading.vue'
 
 // Vue.use(Axios)
 // const Router = useRouter()
+// https://bikers.all1zed.com:8443/api/auth/token/logout
 const app = Vue.createApp(App)
 app.use(router, VueAxios, axios, VueCookies, Loading);
-app.provide('baseURL', app.config.globalProperties.$baseURL = "https://packages-api.all1zed.com:8002/");
+app.provide('baseURL', app.config.globalProperties.$baseURL = "https://bikers.all1zed.com:8443/api/");
 app.provide("axios", app.config.globalProperties.$axios = axios);
 app.provide("cookies", app.config.globalProperties.$VueCookies = VueCookies);
 app.component(Loading)

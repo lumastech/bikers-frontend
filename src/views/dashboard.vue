@@ -1,10 +1,10 @@
 <template>
   <Dashboard>
     <div class="grid sm:grid-cols-2 md:grid-cols-4 gap-4">
-        <div class="flex gap-4 bg-gradient-to-r from-sky-100 to-teal-100 rounded-md p-4 shadow-sm shadow-black/20 hover:shadow-xl transition">
+        <RouterLink to="/package" class="flex gap-4 bg-gradient-to-r from-sky-100 to-teal-100 rounded-md p-4 shadow-sm shadow-black/20 hover:shadow-xl transition">
             <p class="flex-auto self-center text-gray-500 font-bold">SEND</p>
             <i class="fa-solid fa-truck-fast self-center text-2xl md:text-4xl text-sky-300"></i>
-        </div>
+        </RouterLink>
         
         <div class="flex gap-4 bg-gradient-to-r from-sky-100 to-teal-100 rounded-md p-4 shadow-sm shadow-black/20 hover:shadow-xl transition">
             <p class="flex-auto self-center text-gray-500 font-bold">COLLECT</p>

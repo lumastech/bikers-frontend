@@ -2,8 +2,8 @@
     <nav class="bg-gradient-to-r from-sky-400 to-teal-400">
         <div class="flex max-w-7xl mx-auto gap-4 px-2 text-white py-2">
             <i class="fas fa-bars self-center"></i>
-            <a href="/" class="flex-auto">ALL1ZED</a>
-            <a href="/login"><i class="fas fa-lock"></i> Login</a>
+            <router-link to="/" class="flex-auto">ALL1ZED</router-link>
+            <router-link to="/login"><i class="fas fa-lock"></i> Login</router-link>
         </div>
     </nav>
 
@@ -48,14 +48,14 @@
 
     <footer class="py-16 bg-gradient-to-b from-sky-500 to-teal-500">
         <div class="max-w-4xl mx-auto text-center">
-            <a href="#" class="inline-block bg-gradient-to-r from-orange-500 to-red-500 text-white font-bold py-1 px-4 rounded shadow hover:shadow-xl transition">CLICK TO BUY BUS TICKETS</a>
-            <h2 class="my-7 text-4xl text-white font-bold drop-shadow">GET THE APP FROM</h2>
+            <router-link to="#" class="inline-block bg-gradient-to-r from-orange-500 to-red-500 text-white font-bold py-1 px-4 rounded shadow hover:shadow-xl transition">CLICK TO BUY BUS TICKETS</router-link>
+            <h2 class="my-7 text-2xl md:text-4xl text-white font-bold drop-shadow">GET THE APP FROM</h2>
             <div class="grid grid-cols-2 gap-4">
                 <div class="md:text-right">
-                    <a href="#" class="inline-block bg-black text-white py-1 px-4 rounded shadow hover:shadow-xl hover:bg-black/50 transition"><img src="../assets/play.png" alt="play store" class="h-9 inline"> GOOGLE PLAY</a>
+                    <router-link to="#" class="inline-block bg-black text-white text-xs md:text-xl py-1 px-4 rounded shadow hover:shadow-xl hover:bg-black/50 transition"><img src="../assets/play.png" alt="play store" class="h-9 inline"> GOOGLE PLAY</router-link>
                 </div>
                 <div class="md:text-left">
-                    <a href="#" class="inline-block bg-sky-600 text-white py-1 px-4 rounded shadow hover:shadow-xl hover:bg-black/50 transition"><img src="../assets/apple.png" alt="play store" class="h-9 inline"> APPLE STORE</a>
+                    <router-link to="#" class="inline-block bg-sky-600 text-white text-xs md:text-xl py-1 px-4 rounded shadow hover:shadow-xl hover:bg-black/50 transition"><img src="../assets/apple.png" alt="play store" class="h-9 inline"> APPLE STORE</router-link>
                 </div>
             </div>
         </div>
